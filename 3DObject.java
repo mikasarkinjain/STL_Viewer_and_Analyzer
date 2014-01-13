@@ -17,10 +17,10 @@ public class 3DObject{
      }
 
     public Triangle getTriangles(int n) {
-	return triangles.get(n-1); 
+	return triangles.get(n); 
     }
 
-    public Triangle projectTriangle(int n) {
+    public Triangle getProjectedTriangles(int n, double xTheta, double yTheta, double zTheta) {
 	Triangle projected = new Triangle((triangle.get(n-1)).projectedCor(1), (triangle.get(n-1)).projectedCor(2),(triangle.get(n-1)).projectedCor(3));
 	return projected;
     }
