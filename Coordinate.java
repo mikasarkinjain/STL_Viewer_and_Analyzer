@@ -25,7 +25,7 @@ public class Coordinate {
 	return coordinate; 
     }
 
-    public double[] projectCor() {
+    public double[] getProjectedCoord() {
 	double[] ans = new double[2];
 	ans[0] = coordinate[0]; //xcor
 	ans[1] = coordinate[1]; //ycor
