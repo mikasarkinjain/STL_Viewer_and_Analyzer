@@ -62,8 +62,15 @@ public double[][][] getFileData(){
       newElementOfC = c[i][11];
       c[i] = newElementOfC;
     }  // this for loop removes all instances of the word "vertex"
+    
+    for (int i = 0; i < c.length; i ++){
+      for (int j = 0; j < c[i].length; j++){
+        c[i] = c[i].split("e")[0];
+      }
+    }
   
   }
+  
   else {return Data;}
 }
 
