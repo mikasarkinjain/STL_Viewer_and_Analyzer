@@ -26,7 +26,7 @@ public class Coordinate {
     }
 
     public double[] projectCor() {
-	double[] ans = new double[3];
+	double[] ans = new double[2];
 	ans[0] = coordinate[0]; //xcor
 	ans[1] = coordinate[1]; //ycor
 	// projecting math here:
