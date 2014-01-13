@@ -17,10 +17,10 @@ public class Triangle {
     }
 
     public Coordinate getCor(int n) {
-	return coordinates.get(n-1); 
+	return coordinates.get(n); 
     }
 
-    public double[] projectCor(int n) {
-	return (coordinates.get(n-1)).projectedCor();
+    public double[] getProjectedCoords(int n) {
+	return coordinates.get(n).getProjectedCoord();
     }
 }
