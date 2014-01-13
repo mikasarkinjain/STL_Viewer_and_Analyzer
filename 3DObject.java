@@ -16,12 +16,15 @@ public class 3DObject{
 	 return triangles; 
      }
 
-    public Triangle getTriangles(int n) {
+    public Triangle getTriangle(int n) {
 	return triangles.get(n); 
     }
 
-    public Triangle getProjectedTriangles(int n, double xTheta, double yTheta, double zTheta) {
-	Triangle projected = new Triangle((triangle.get(n-1)).projectedCor(1), (triangle.get(n-1)).projectedCor(2),(triangle.get(n-1)).projectedCor(3));
-	return projected;
+    public double[][][] getProjected3DObject(double xTheta, double yTheta, double zTheta) {
+    	double[][][] projected3DObject = new double[triangles.size()][3][2];
+    	for (int i = 0; i < triangles.size(); i++){
+    		projected3DObject[i] = triangles.get(i).getProjectedTriangle(double xTheta, double yTheta, double zTheta);
+    	}
+    	return projected3DObject;
     }
 }
