@@ -20,7 +20,11 @@ public class Triangle {
 	return coordinates.get(n); 
     }
 
-    public double[] getProjectedCoords(int n) {
-	return coordinates.get(n).getProjectedCoord();
+    public double[][] getProjectedTriangle(double xTheta, double yTheta, double zTheta) {
+    	double[][] projectedCoords = new double[3][2];
+    	projectedCoords[0] = coordinates.get(0).getProjectedCoord(xTheta, yTheta, zTheta);
+    	projectedCoords[1] = coordinates.get(1).getProjectedCoord(xTheta, yTheta, zTheta);
+    	projectedCoords[2] = coordinates.get(2).getProjectedCoord(xTheta, yTheta, zTheta);
+	return projectedCoords;
     }
 }
