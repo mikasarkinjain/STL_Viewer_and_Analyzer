@@ -6,10 +6,11 @@ public class Triangle {
 
     private ArrayList<Coordinate> coordinates = new ArrayList<Coordinate>();
     
-    public Triangle (Coordinate cor1, Coordinate cor2, Coordinate cor3 ) {
-	coordinates.add(cor1);
-	coordinates.add(cor2);
-	coordinates.add(cor3);
+    public Triangle (double[][] cors) {
+    	for (int i = 0; i < 3; i++}
+	coordinates.add(cors[1]); //adds a double[] = Coordinate
+	coordinates.add(cors[2]);
+	coordinates.add(cors[3]);
     }
 
     public String toString() {
