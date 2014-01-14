@@ -4,11 +4,11 @@
 
 public class 3DObject{
 
-    private ArrayList<Triangle> triangles = new ArrayList<Triangle>();
+    private ArrayList<Triangle> triangles = new ArrayList<Triangle>(); //HAS TO BE ARRAY OF TRIANGLE OBJECTS
     
     public 3DObject (double[][][] t) {
 	for (double[][] i: t) {
-	    triangles.add(i);       //You need to instantiate a new triangle.
+	    triangles.add(i);       //You need to instantiate a new triangle to satsify this ^^
 	}
     }
 
