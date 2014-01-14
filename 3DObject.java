@@ -8,7 +8,7 @@ public class 3DObject{
     
     public 3DObject (double[][][] t) {
 	for (double[][] i: t) {
-		Triangle in = new Triangle(i)
+            Triangle in = new Triangle(i)
 	    triangles.add(in);       //You need to instantiate a new triangle to satsify this ^^
 	}
     }
