@@ -8,7 +8,7 @@ public class Triangle {
     
     public Triangle (double[][] cors) {
     	for (double[] i: cors){
-	coordinates.add(i);//adds a double[] = Coordinate
+	coordinates.add(i);//adds a double[] = Coordinate // You have to instantiate a coordinate
     	}
     }
 
