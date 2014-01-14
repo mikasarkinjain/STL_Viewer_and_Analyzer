@@ -4,9 +4,10 @@ String File;
 double[][][] Data;
 
 public FileContent(String filePath){
-  //Should get contents of file at filePath
-  //Instead:
-  File = "solid block100
+  File = readFile(filePath, StandardCharsets.UTF_8);
+  
+/* FILE CONTENT IN THE FORM OF:
+  solid block100
    facet normal -1.000000e+000 0.000000e+000 0.000000e+000 //THIS DOES NOT MATTER FOR ANYTHING
       outer loop
          vertex 0.000000e+000 1.000000e+002 1.000000e+002
@@ -21,8 +22,8 @@ public FileContent(String filePath){
          vertex 0.000000e+000 0.000000e+000 0.000000e+000
       endloop
    endfacet
-endsolid";
-
+endsolid
+*/
 //The numbers after the "e" don't matter either
 }
 
@@ -66,6 +67,15 @@ public double[][][] getFileData(){
     for (int i = 0; i < c.length; i ++){
       for (int j = 0; j < c[i].length; j++){
         c[i] = c[i].split("e")[0];
+      }
+    }
+    
+    Data = new double[c.length][3][3];
+    for (int i = 0; i < Data.length; i++){
+      for (int j = 0; j < 3; j++){
+        for (int k = 0; k < 3; k++){
+          Data[i][j][k] = Double.parseDouble(c[i][j][k]);
+        }
       }
     }
   
