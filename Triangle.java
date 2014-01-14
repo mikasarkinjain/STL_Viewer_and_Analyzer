@@ -7,10 +7,9 @@ public class Triangle {
     private ArrayList<Coordinate> coordinates = new ArrayList<Coordinate>();
     
     public Triangle (double[][] cors) {
-    	for (int i = 0; i < 3; i++}
-	coordinates.add(cors[1]); //adds a double[] = Coordinate
-	coordinates.add(cors[2]);
-	coordinates.add(cors[3]);
+    	for (double[] i: cors){
+	coordinates.add(i);//adds a double[] = Coordinate
+    	}
     }
 
     public String toString() {
