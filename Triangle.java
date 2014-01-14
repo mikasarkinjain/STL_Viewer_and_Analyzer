@@ -4,11 +4,11 @@
 
 public class Triangle {
 
-    private ArrayList<Coordinate> coordinates = new ArrayList<Coordinate>();
+    private ArrayList<Coordinate> coordinates = new ArrayList<Coordinate>(); //HAS TO BE ARRAY OF THE OBJECT COORDINATE
     
     public Triangle (double[][] cors) {
     	for (double[] i: cors){
-	coordinates.add(i);//adds a double[] = Coordinate // You have to instantiate a coordinate
+	coordinates.add(i);//adds a double[] = Coordinate // You have to instantiate a coordinate to satisfy this ^^
     	}
     }
 
