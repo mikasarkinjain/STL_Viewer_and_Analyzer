@@ -6,10 +6,10 @@ public class Coordinate {
 
     private double[] coordinate = new double[3];
     
-    public Coordinate(double xcor, double ycor, double zcor ) {
-	coordinate[0] = xcor;
-	coordinate[1] = ycor;
-	coordinate[2] = zcor;
+    public Coordinate(double[] cors) {
+	for (int i = 0; i < 3; i++){
+		coordinate[i] = cors[i];	
+	}
     }
 
     public String toString() {
