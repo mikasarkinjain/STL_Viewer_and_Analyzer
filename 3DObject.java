@@ -6,8 +6,8 @@ public class 3DObject{
 
     private ArrayList<Triangle> triangles = new ArrayList<Triangle>();
     
-    public 3DObject (ArrayList<Triangle> t) {
-	for (Triangle i: t) {
+    public 3DObject (double[][][] t) {
+	for (double[][] i: t) {
 	    triangles.add(i);
 	}
     }
