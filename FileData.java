@@ -52,7 +52,7 @@ public class FileData{
     
 	    //turn String File into 3D array that looks like:
 	    //[  [  [x y z] [x y z] [x y z] ]   [ [x y z] [x y z] [x y z] ]   [ [x y z] [x y z] [x y z] ] ... ]
-    
+	    //STEP1    
 	    String[] a = File.split("outer loop");
 	    String [] b = new String[a.length -1];
 	    for (int i = 1; i < a.length; i ++){
@@ -65,10 +65,13 @@ public class FileData{
 	       vertex 0.000000e+000 1.000000e+002 0.000000e+000
 	       vertex 0.000000e+000 0.000000e+000 1.000000e+002
 	    */
+	    //STEP 2
 	    String[][] c = new String[b.length][12];
 	    for (int i = 0; i < b.length; i ++){
 		c[i] = b[i].split("\\s+"); //Splits on any witespace
 	    }  
+	    
+	    //STEP 3
   
 	    for (int i = 0; i < c.length; i ++){
 		String[] newElementOfC = new String[9];
@@ -84,17 +87,20 @@ public class FileData{
 		c[i] = newElementOfC;
 	    }  // this for loop removes all instances of the word "vertex"
     
+    	    //STEP 4
+	    
 	    for (int i = 0; i < c.length; i ++){
 		for (int j = 0; j < c[i].length; j++){
 		    c[i][j] = c[i][j].split("e")[0];
 		}
 	    }
-    
+    	
+    	    //STEP 5
 	    Data = new double[c.length][3][3];
-	    for (int i = 0; i < Data.length; i++){
+	    for (int i = 0; i < c.length; i++){
 		for (int j = 0; j < 3; j++){
 		    for (int k = 0; k < 3; k++){
-			//Data[i][j][k] = Double.parseDouble(c[i][j][k]);
+			Data[i][j][k] = Double.parseDouble(c[i][j*3+k]);
 		    
 		    }
 
