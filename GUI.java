@@ -8,12 +8,12 @@ class GUI extends JFrame{
     private double yTheta = 0;
     private double zTheta = 0;
 
-/*  private String path = "path/to/file";
-    private FileContents file = new FileContents(path); 
-    private String fileCoords = file.getFileCoords;
+    private String path = "samplecube.stl";
+    private FileData file = new FileData(path); 
+    private double[][][] fileCoords = file.getFileData;
     //fileCoords in form: [[x1, y1, z1, x2, y2, z2, x3, y3, z3], [x1, y1, z1, x2, y2, z2, x3, y3, z3] ... ]
-    private 3DObject 3DObj = new 3DObject(fileCoords);
-*/
+    private TriangleObject 3DObj = new TriangleObject(fileCoords);
+
 
     public GUI(){
         setTitle("STL VIEWER & ANALYZER"); 
@@ -41,7 +41,7 @@ class GUI extends JFrame{
 
     public void project3DObject(Graphics g, Graphics2D g2){ //this method exists to reduce refresh time of display
         super.paint(g); 
-      /*double[][] projectedCoords = 3DObj.getProjectedCoords(xTheta, yTheta, zTheta);
+        double[][][] projectedCoords = 3DObj.getProjectedCoords(xTheta, yTheta, zTheta);
         //projectedCoords in form: [[x1, y1, x2, y2, x3, y3], [x1, y1, x2, y2, x3, y3], [x1, y1, x2, y2, x3, y3] ... ]
 
         for (int i = 0; i < projectedCoords.length; i++){
@@ -53,17 +53,17 @@ class GUI extends JFrame{
             g2.draw(line3);
 
         }
-        */
+        
 
         xTheta += 10;
         yTheta += 10;
         zTheta += 10;
         
-        Line2D lin = new Line2D.Float((int)xTheta%500, 100, 250, 260);
+        /*Line2D lin = new Line2D.Float((int)xTheta%500, 100, 250, 260);
         Line2D lin2 = new Line2D.Float(200, 100, 250, 260);
 
         g2.draw(lin);
-        g2.draw(lin2);
+        g2.draw(lin2);*/
 
         try {
             Thread.sleep(400);
