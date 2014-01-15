@@ -5,11 +5,11 @@
 //ArrayList's implementation is in the java.util package
 import java.util.ArrayList;
 
-public class ThreeDObject {
+public class TriangleObject {
 
     private ArrayList<Triangle> triangles = new ArrayList<Triangle>(); //HAS TO BE ARRAY OF TRIANGLE OBJECTS
     
-    public ThreeDObject (double[][][] t) {
+    public TriangleObject (double[][][] t) {
 	for (double[][] i: t) {
             Triangle in = new Triangle(i);
 		triangles.add(in);       //You need to instantiate a new triangle to satsify this ^^
