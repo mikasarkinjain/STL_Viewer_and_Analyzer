@@ -7,7 +7,7 @@ public class Coordinate {
     private double[] coordinate = new double[3];
     
     public Coordinate(double[] cors) {
-	for (int i = 0; i < 3; i++){
+	for (int i = 0; i < cors.length; i++){
 		coordinate[i] = cors[i];	
 	}
     }
@@ -15,8 +15,9 @@ public class Coordinate {
     public String toString() {
 	String ans= "[";
 	for (double i : coordinate) {
-	    ans += i + " "; 
+	    ans += i + ", "; 
 	}
+	ans = ans.substring(0, ans.length() - 2);
 	ans += "]";
 	return ans;
     }
