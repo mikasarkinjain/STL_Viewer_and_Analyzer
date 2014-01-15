@@ -56,7 +56,7 @@ public class FileData{
 	    String[] a = File.split("outer loop");
 	    String [] b = new String[a.length -1];
 	    for (int i = 1; i < a.length; i ++){
-		b[i] = a[i].split("endloop")[0];
+		b[i-1] = a[i].split("endloop")[0];
 	    }
     
 	    // at this point, all elements of b look like:
