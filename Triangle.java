@@ -30,8 +30,7 @@ public class Triangle {
 	return coordinates.get(n); 
     }
 
-    //public double[][] getProjectedTriangle(double xTheta, double yTheta, double zTheta) {
-    public double[][] getProjectedTriangle() {
+    public double[][] getProjectedTriangle(double xTheta, double yTheta, double zTheta) {
     	double[][] projectedCoords = new double[3][2];
   	//projectedCoords[0] = coordinates.get(0).getProjectedCoord( xTheta, yTheta, zTheta);
 	//code above doesn't work because the getProjectedCoord takes no params
