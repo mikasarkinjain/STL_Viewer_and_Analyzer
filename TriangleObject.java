@@ -24,11 +24,10 @@ public class TriangleObject {
 	return triangles.get(n); 
     }
 
-    // public double[][][] getProjected3DObject(double xTheta, double yTheta, double zTheta) {
-    public double[][][] getProjected3DObject() {
+    public double[][][] getProjected3DObject(double xTheta, double yTheta, double zTheta) {
     	double[][][] projected3DObject = new double[triangles.size()][3][2];
     	for (int i = 0; i < triangles.size(); i++){
-	    projected3DObject[i] = triangles.get(i).getProjectedTriangle();
+	    projected3DObject[i] = triangles.get(i).getProjectedTriangle(xTheta, yTheta, zTheta);
     	}
     	return projected3DObject;
     }
