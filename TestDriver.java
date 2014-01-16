@@ -6,7 +6,7 @@ public class TestDriver {
 
     public static void main ( String[] args ) {
     
-	
+	/*
 	//Testing Coordinate Class
 	System.out.println("TESTING COORDINATE CLASS \n");
 	double[] x = { 0.0, 1.0, 2.0 };
@@ -51,12 +51,18 @@ public class TestDriver {
 	double[][][] pdo = o1.getProjected3DObject(0.0,0.0,0.0);
 	TriangleObject projectedo = new TriangleObject(pdo);
 	System.out.println("Projected o1: " + projectedo );
-       
+	*/
 	//Testing FileData class
 	System.out.println("\nTESTING FILEDATA CLASS \n");
 	FileData f1 = new FileData("samplecube.stl");
-	System.out.println((f1.getFileData())[0][0][0]);
-	
+	f1.getFileData();
+	/*
+	String meow = "1.000000e+002";
+	String one = meow.split("e")[0];
+	String two = meow.split("e")[1];
+	System.out.println(one);
+	System.out.println(two);
+	*/
     }// end main method
  
 }// end TestDriver
