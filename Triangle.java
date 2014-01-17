@@ -34,9 +34,9 @@ public class Triangle {
     	double[][] projectedCoords = new double[3][2];
   	//projectedCoords[0] = coordinates.get(0).getProjectedCoord( xTheta, yTheta, zTheta);
 	//code above doesn't work because the getProjectedCoord takes no params
-    	projectedCoords[0] = coordinates.get(0).getProjectedCoord(double xTheta, double yTheta, double zTheta);
-    	projectedCoords[1] = coordinates.get(1).getProjectedCoord(double xTheta, double yTheta, double zTheta);
-    	projectedCoords[2] = coordinates.get(2).getProjectedCoord(double xTheta, double yTheta, double zTheta);
+    	projectedCoords[0] = coordinates.get(0).getProjectedCoord(xTheta, yTheta, zTheta);
+    	projectedCoords[1] = coordinates.get(1).getProjectedCoord(xTheta, yTheta, zTheta);
+    	projectedCoords[2] = coordinates.get(2).getProjectedCoord(xTheta, yTheta, zTheta);
 	return projectedCoords;
     }
 }
