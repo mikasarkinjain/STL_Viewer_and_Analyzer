@@ -58,17 +58,10 @@ public class Triangle {
     
     public double[][] getProjectedTriangle(double xTheta, double yTheta, double zTheta) {
     	double[][] projectedCoords = new double[3][2];
-<<<<<<< Updated upstream
-  	//projectedCoords[0] = coordinates.get(0).getProjectedCoord( xTheta, yTheta, zTheta);
-	//code above doesn't work because the getProjectedCoord takes no params
     	projectedCoords[0] = coordinates.get(0).getProjectedCoord(xTheta, yTheta, zTheta);
     	projectedCoords[1] = coordinates.get(1).getProjectedCoord(xTheta, yTheta, zTheta);
     	projectedCoords[2] = coordinates.get(2).getProjectedCoord(xTheta, yTheta, zTheta);
-=======
-    	projectedCoords[0] = coordinates.get(0).getProjectedCoord();
-    	projectedCoords[1] = coordinates.get(1).getProjectedCoord();
-    	projectedCoords[2] = coordinates.get(2).getProjectedCoord();
->>>>>>> Stashed changes
+
 	return projectedCoords;
     }
 }
