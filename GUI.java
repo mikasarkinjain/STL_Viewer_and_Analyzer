@@ -54,7 +54,7 @@ class GUI extends JFrame{
         button1.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e)
             {
-            yTheta += 0.25;
+            yTheta -= 0.25;
             refresh();
             }
         });   
@@ -62,7 +62,7 @@ class GUI extends JFrame{
         button2.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e)
             {
-            yTheta -= 0.25;
+            yTheta += 0.25;
             refresh();
             }
         }); 
