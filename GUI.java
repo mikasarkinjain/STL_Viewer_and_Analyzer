@@ -33,17 +33,17 @@ class GUI extends JFrame{
 
         setTitle("STL VIEWER & ANALYZER"); 
         setLocation(200,75); 
-        setSize(600,600); 
+        setSize(600,500); 
         setDefaultCloseOperation(EXIT_ON_CLOSE); 
 
         JPanel panel = new JPanel();
         getContentPane().add(panel);
 
 
-        JButton button1 = new JButton("↑");
-        JButton button2 = new JButton("↓");
-        JButton button3 = new JButton("←");
-        JButton button4 = new JButton("→");
+        JButton button1 = new JButton("^");
+        JButton button2 = new JButton("v");
+        JButton button3 = new JButton("<");
+        JButton button4 = new JButton(">");
 
         JButton button5 = new JButton("+");
         JButton button6 = new JButton("-");
