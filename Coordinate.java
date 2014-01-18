@@ -55,7 +55,7 @@ public class Coordinate {
 
         double[] ans = new double[2];
         ans[0] = x * 0.5 * zoom; //xcor
-        ans[1] = y * 0.5 * zoom; //ycor
+        ans[1] = z * 0.5 * zoom * -1; //ycor
         
         return ans;
     }
