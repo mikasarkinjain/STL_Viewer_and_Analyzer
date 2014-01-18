@@ -48,7 +48,7 @@ class GUI extends JFrame{
         JButton button5 = new JButton("+");
         JButton button6 = new JButton("-");
 
-        JButton button7 = new JButton("UPLOAD STL");
+        JButton button7 = new JButton("IMPORT STL");
         JButton button8 = new JButton("ANALYZE STL");
 
         button1.addActionListener(new ActionListener() {
@@ -115,9 +115,9 @@ class GUI extends JFrame{
         button8.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e)
             {
-            JOptionPane.showMessageDialog(null, "Width: " + (TriangleObj.getMax()[0] - TriangleObj.getMin()[0]) 
-                                              + "\nLength: " + (TriangleObj.getMax()[1] - TriangleObj.getMin()[1]) 
-                                              + "\nHeight: " + (TriangleObj.getMax()[2] - TriangleObj.getMin()[2]) 
+            JOptionPane.showMessageDialog(null, "Width: " + (TriangleObj.getMax()[0] - TriangleObj.getMin()[0]) + " units"
+                                              + "\nLength: " + (TriangleObj.getMax()[1] - TriangleObj.getMin()[1]) + " units" 
+                                              + "\nHeight: " + (TriangleObj.getMax()[2] - TriangleObj.getMin()[2]) + " units" 
                                               + "\nNumber of Facets: " + file.getFileData().length, "STL ANALYSIS", JOptionPane.INFORMATION_MESSAGE);
             }
         });   
