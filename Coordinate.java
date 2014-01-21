@@ -32,9 +32,9 @@ public class Coordinate {
 
     public double[] getProjectedCoord(double xTheta, double yTheta, double zTheta, double zoom, double[] max, double[] min) {
         double[] coordinate2 = new double[3]; 
-        coordinate2[0] = coordinate[0] - (min[0]);// - min[0]) / 2;
+        coordinate2[2] = coordinate[0] - (min[0]);// - min[0]) / 2;
         coordinate2[1] = coordinate[1] - (min[1]);// - min[1]) / 2;
-        coordinate2[2] = coordinate[2] - (min[2]);// - min[2]) / 2;
+        coordinate2[0] = coordinate[2] - (min[2]);// - min[2]) / 2;
 
         double x = Math.pow(Math.abs(Math.pow(coordinate2[0],2)+Math.pow(coordinate2[1],2)), 0.5) * Math.sin(zTheta + Math.atan((coordinate2[1]+0.000000000000000314)/coordinate2[0]+0.000000000000000314)); 
         double y = Math.pow(Math.abs(Math.pow(coordinate2[0],2)+Math.pow(coordinate2[1],2)), 0.5) * Math.cos(zTheta + Math.atan((coordinate2[1]+0.000000000000000314)/coordinate2[0]+0.000000000000000314));
@@ -55,7 +55,7 @@ public class Coordinate {
 
         double[] ans = new double[2];
         ans[0] = x * 0.5 * zoom; //xcor
-        ans[1] = z * 0.5 * zoom * -1; //ycor
+        ans[1] = y * 0.5 * zoom * -1; //ycor
         
         return ans;
     }
