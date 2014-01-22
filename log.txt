@@ -1,2 +1,50 @@
-Jan 19 2014 
-Jan 19 2014
+Estimated Number of Man-Hours: 30
+
+--Jan 12 2014--
+Mika: 
+Ida:
+
+--Jan 13 2014--
+Mika: 
+Ida:
+
+--Jan 14 2014--
+Mika: 
+Ida:
+
+--Jan 15 2014--
+Mika: 
+Ida:
+
+--Jan 16 2014--
+Mika: 
+Ida:
+
+--Jan 17 2014--
+Mika: 
+Ida:
+
+--Jan 18 2014--
+Mika: Finished GUI, improved projection math.
+Ida: Finished getMax and getMin.
+
+--Jan 19 2014--
+Mika: Nothing.
+Ida: Nothing.
+
+--Jan 20 2014--
+Mika: Nothing.
+Ida: Nothing.
+
+--Jan 21 2014--
+Mika: Revised log and commented code, improved projection math.
+Ida: Revised log and commented code.
+
+--Jan 22 2014--
+Mika: Revised log and commented code.
+Ida: Revised log and commented code.
+
+--Jan 23 2014--
+Mika: Revised log and commented code.
+Ida: Revised log and commented code.
+
