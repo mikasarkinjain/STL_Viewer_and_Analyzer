@@ -1,32 +1,32 @@
-Estimated Number of Man-Hours: 30
+Team Double A
 
 --Jan 12 2014--
 Mika: 
-Ida: Created Coordinate class.
+Ida: Created Coordinate, Triangle, and 3DObject class and made the constructor, toString, and getProjected methods.
 
 --Jan 13 2014--
-Mika: Made Coordinate class more robust and made critical improvements to functionality.
-Ida:
+Mika: Made critical improvements to functionality of the Coordinate class. Created and worked on FileData class and GUI.
+Ida: Worked on the constructor for the Coordinate, Triangle, and 3DObject class. 
 
 --Jan 14 2014--
 Mika: 
-Ida:
+Ida: Robustified constructor of the Coordinate, Triangle, and 3DObject class. Fixed toString methods. Renamed 3DObject class to ThreeDObject because I could not create an object with numeral in its name. Imported java.util package for ArrayLists to classes in order to compile certain classes. Removed params (theta) in getProjected methods of the three classes in order to run the driver. Created the TestDriver class to test the Coordinate, Triangle, and ThreeDObject class. Found an error in compiling the FileData class. 
 
 --Jan 15 2014--
-Mika: 
-Ida:
+Mika: Added projection math to the getProjectedCoord method of the Coordinate class. Renamed ThreeDObject to TriangleObject. Fixed a bug found in FileData class. 
+Ida: Added parameters back into getProjected methods of Triangle, TriangleObject, and TestDriver after projection math was added. TestDriver now also tests FileData class. Fixed errors in the getFileData method. 
 
 --Jan 16 2014--
 Mika: 
-Ida:
+Ida: Worked on bugs found in the FileData class. Fixed errors in GUI.
 
 --Jan 17 2014--
-Mika: 
-Ida:
+Mika: Fixed bugs in Coordinate class. Added functionality to GUI.
+Ida: Created getMax and getMin methods in the Triangle class. Updated the TestDriver class to test getMin and getMax methods. Fixed issues found with the getFileData method in FileData. 
 
 --Jan 18 2014--
-Mika: Finished GUI, improved projection math.
-Ida: Finished getMax and getMin.
+Mika: Finished GUI, improved projection math. Fixed bugs in Coordinate class. 
+Ida: Finished getMax and getMin in Triangle and TriangleObject class. 
 
 --Jan 19 2014--
 Mika: Nothing.
