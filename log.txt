@@ -2,10 +2,10 @@ Estimated Number of Man-Hours: 30
 
 --Jan 12 2014--
 Mika: 
-Ida:
+Ida: Created Coordinate class.
 
 --Jan 13 2014--
-Mika: 
+Mika: Made Coordinate class more robust and made critical improvements to functionality.
 Ida:
 
 --Jan 14 2014--
