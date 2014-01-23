@@ -27,15 +27,15 @@ Mika: Fixed bugs in Coordinate class. Added functionality to GUI.
 Ida: Created getMax and getMin methods in the Triangle class. Updated the TestDriver class to test getMin and getMax methods. Fixed issues found with the getFileData method in FileData. 
 
 --Jan 18 2014--
-Mika: Finished GUI, improved projection math. Fixed bugs in Coordinate class. 
+Mika: Finished GUI, improved projection math, fixed bugs in Coordinate class, created website. 
 Ida: Finished getMax and getMin in Triangle and TriangleObject class. 
 
 --Jan 19 2014--
-Mika: Nothing.
+Mika: Improved website. 
 Ida: Nothing.
 
 --Jan 20 2014--
-Mika: Nothing.
+Mika: Changed website.
 Ida: Nothing.
 
 --Jan 21 2014--
