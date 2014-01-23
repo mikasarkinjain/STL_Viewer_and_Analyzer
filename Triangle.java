@@ -15,7 +15,7 @@ public class Triangle {
     /*==================================================
       constructor -- initializes a Triangle object
       pre:
-      post: adds coordinate values to the coordinate array
+      post: adds Coordinate objects to the ArrayList coordinates
       ==================================================*/
     public Triangle (double[][] cors) {
 	coordinates = new ArrayList <Coordinate>();
