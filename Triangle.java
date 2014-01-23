@@ -8,9 +8,9 @@ import java.util.ArrayList;
 public class Triangle {
 
     // instance of class ArrayList, holding objects of type Coordinate
-    // ArrayList coordinates looks like:  { {x1,y1,z1} , {x2, y2, z2}, ... , {xn, yn, zn} }  
+    // ArrayList coordinates: { {Coordinate1}, {Coordinate2}, {Coordinate3} }
+    // 			      { {x1,y1,z1}, {x2, y2, z2},  {x3, y3, z3} }  
     private ArrayList<Coordinate> coordinates; 
-    
     
     /*==================================================
       constructor -- initializes a Triangle object
