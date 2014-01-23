@@ -16,7 +16,7 @@ public class TestDriver {
 	double [] get = c1.getCor(); //test getCor
 	Coordinate getc1 = new Coordinate( get );
 	System.out.println("Getting the coordinates of c1: \n" + getc1);
-	double[] p = c1.getProjectedCoord(); //test getProjectedCoord
+	double[] p = c1.getProjectedCoord(0,0,0,0,x,x); //test getProjectedCoord
 	System.out.println("Projected xcor of c1: " + p[0] );
 	System.out.println("Projected ycor of c1: " + p[1] );
 
@@ -43,7 +43,7 @@ public class TestDriver {
 	System.out.println("second coordinate of t1: \n" + t1.getCor(1));
 	System.out.println("third coordinate of t1: \n" + t1.getCor(2));
 	//testing getProjectedTriangle
-	double[][] pt =  t1.getProjectedTriangle(0.0, 0.0, 0.0);
+	double[][] pt =  t1.getProjectedTriangle(0.0, 0.0, 0.0, 0, x,x);
 	Triangle projectedt = new Triangle(pt);
 	System.out.println("projected t1: " + projectedt );
 	
@@ -72,7 +72,7 @@ public class TestDriver {
 	}	
 	
 	//testing getProjected3DObject 
-	double[][][] pdo = o1.getProjected3DObject(0.0,0.0,0.0);
+	double[][][] pdo = o1.getProjected3DObject(0,0,0,0);
 	TriangleObject projectedo = new TriangleObject(pdo);
 	System.out.println("Projected o1: " + projectedo );
 	
