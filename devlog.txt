@@ -43,10 +43,10 @@ Mika: Revised log and commented code, improved projection math.
 Ida: Revised log and commented code.
 
 --Jan 22 2014--
-Mika: Revised log and commented code.
+Mika: Revised log and commented code, worked on website.
 Ida: Revised log and commented code.
 
 --Jan 23 2014--
-Mika: Revised log and commented code.
+Mika: Revised log and commented code, improved website, improved readme.md.
 Ida: Revised log and commented code.
 
