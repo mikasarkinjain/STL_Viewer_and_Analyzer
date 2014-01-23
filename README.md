@@ -13,6 +13,8 @@ $ javac *.java ; java GUI
 ```
 Make sure you have Java installed.
 
+Sample STL files are included in the package. 
+
 ### Authors and Contributors
 Mika Sarkin Jain, Ida Huang   
 Stuyvesant High School, New York City
