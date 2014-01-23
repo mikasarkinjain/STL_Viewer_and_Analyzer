@@ -1,10 +1,8 @@
 STL_Viewer_and_Analyzer
 =======================
 
-Developed by Mika Sarkin Jain & Ida Huang.
-
 ### About
-This small program provides a simple way to view an stl file, a standard 3D modeling format often used in 3D printing, and also ascertain important characteristics of the stl including its length, its width, its height, and the number of facets it has.
+This small program provides a simple way to view an imported stl file, a standard 3D modeling file format often used in 3D printing, and ascertain important characteristics including the length, width, height, and number of facets of the model.
 
 ### Instructions
 Simply download and enter the following into your terminal:
@@ -13,6 +11,7 @@ Simply download and enter the following into your terminal:
 $ cd path/to/STL_Viewer_and_Analyzer-master
 $ javac *.java ; java GUI
 ```
+Make sure you have Java installed.
 
 ### Authors and Contributors
 Mika Sarkin Jain, Ida Huang   
