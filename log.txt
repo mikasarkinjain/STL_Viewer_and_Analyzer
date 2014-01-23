@@ -1,15 +1,17 @@
-Team Double A
+Mika Sarkin Jain & Ida Huang (Team Double A)
+*For a more precise development history go to https://github.com/mikasarkinjain/STL_Viewer_and_Analyzer/graphs.
 
+IDA: MAKE SURE THE THINGS I WROTE I DID ARE CORRECT: I WROTE THEM DOWN FROM MEMORY.
 --Jan 12 2014--
-Mika: 
-Ida: Created Coordinate, Triangle, and 3DObject class and made the constructor, toString, and getProjected methods.
+Mika: Outlined entire project in detail, made a UML-esque diagram created Coordinate, Triangle, and 3DObject classes.
+Ida: Worked on Coordinate, Triangle, and 3DObject class, made the constructor, toString, and getProjected methods.
 
 --Jan 13 2014--
-Mika: Made critical improvements to functionality of the Coordinate class. Created and worked on FileData class and GUI.
+Mika: Made critical improvements to functionality of the Coordinate class. Created and worked on FileData class and GUI class.
 Ida: Worked on the constructor for the Coordinate, Triangle, and 3DObject class. 
 
 --Jan 14 2014--
-Mika: 
+Mika: Coninued working on GUI, improved string parsing in FileData, looked over Ida's work and made corrections.
 Ida: Robustified constructor of the Coordinate, Triangle, and 3DObject class. Fixed toString methods. Renamed 3DObject class to ThreeDObject because I could not create an object with numeral in its name. Imported java.util package for ArrayLists to classes in order to compile certain classes. Removed params (theta) in getProjected methods of the three classes in order to run the driver. Created the TestDriver class to test the Coordinate, Triangle, and ThreeDObject class. Found an error in compiling the FileData class. 
 
 --Jan 15 2014--
@@ -17,7 +19,7 @@ Mika: Added projection math to the getProjectedCoord method of the Coordinate cl
 Ida: Added parameters back into getProjected methods of Triangle, TriangleObject, and TestDriver after projection math was added. TestDriver now also tests FileData class. Fixed errors in the getFileData method. 
 
 --Jan 16 2014--
-Mika: 
+Mika: Added more functionality to GUI class and added file reading capabilitied to FileData.
 Ida: Worked on bugs found in the FileData class. Fixed errors in GUI.
 
 --Jan 17 2014--
