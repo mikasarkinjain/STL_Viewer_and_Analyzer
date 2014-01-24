@@ -58,7 +58,7 @@ Obstacles Overcome (and how)
   GUI refreshing obstacle overcome by figuring out how to acess the graphics object of JFrame
   File reading ability was researched
   Projection math derived from scratch
-  File parsing solved with trial and error
+  File parsing solved with trial and error (pinpointing the location of error using S.O.P.)
   Rendering of lines solved with research
 
 Unresolved Issues & Additional features
@@ -67,6 +67,8 @@ Unresolved Issues & Additional features
   Panning ability
   
 Cool Stuff Learned (conceptual and/or practical)
+  Better understanding distinct uses for ArrayLists and arrays
+  Introduced to new methods in the String class
   How to make a GUI (and refresh it)
   How to read files
   Reinforced understanding of 3D projections onto the plane
@@ -79,6 +81,7 @@ Mid-development Design Changes (and why)
 Lessons Learned (to apply to future projects, CS or otherwise)
   Diagram and plan everything in detail beforehand
   Budget time effectively and leave contingency time 
+  Usefullness of S.O.P. to find errors in code
   Make something interesting 
   Do something enjoyable 
   
