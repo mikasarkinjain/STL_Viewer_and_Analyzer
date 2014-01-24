@@ -12,6 +12,11 @@ public class FileData{
     String File;
     double[][][] Data;
 
+   /*==================================================
+     constructor -- initializes a FileData object, uses readFile method to assign a string to String File
+     pre:
+     post: Variable String File contains contents of the stl file with the input name
+     ==================================================*/
     public FileData(String filePath){
 	File = readFile(filePath);
   
@@ -60,7 +65,7 @@ public class FileData{
      double[][][] getFileData() -- removes unnecessary information in String file and turns the String file into a 3D array
      that looks like: [  [  [x y z] [x y z] [x y z] ]   [ [x y z] [x y z] [x y z] ]   [ [x y z] [x y z] [x y z] ] ... ]
      pre:
-     post: returns a 3D array with coordinates for all vertexes of the object
+     post: returns a 3D array with coordinates for all vertexes of the model
      ==================================================*/
     public double[][][] getFileData() {
 	
