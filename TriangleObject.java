@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class TriangleObject {
 
-    // instance of class ArrayList, holding objects of type Triangle
+    // instance of class TriangleObject, holding objects of type Triangle
     // ArrayList triangles: { { Triangle1 } , { Triangle2 }, ... ,{ TriangleN } } 
     // 			    { { { x1,y1,z1 } , { x2, y2, z2 }, { x3, y3, z3 } }, ...
     //	  		     { { x1,y1,z1 } , { x2, y2, z2 }, { x3, y3, z3 } } } 
