@@ -14,7 +14,7 @@ public class Coordinate {
       ==================================================*/
     public Coordinate(double[] cors) {
 	// make sure the input array contains three doubles
-	if (cor.length == 3) {
+	if (cors.length == 3) {
 	    for (int i = 0; i < cors.length; i++){
                 coordinate[i] = cors[i];        
 	    }
