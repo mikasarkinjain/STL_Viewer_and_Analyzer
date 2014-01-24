@@ -8,7 +8,7 @@ This small program provides a simple way to view an imported stl file, a standar
 Simply download, unpackage, and enter the following into your terminal:
 
 ```
-$ cd path/to/mikasarkinjain-STL_Viewer_and_Analyzer-b4aa4b0
+$ cd path/to/unpackaged/folder
 $ javac *.java ; java GUI
 ```
 Make sure you have Java installed.
