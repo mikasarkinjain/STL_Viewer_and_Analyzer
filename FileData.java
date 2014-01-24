@@ -8,13 +8,14 @@ import java.io.IOException;
 
 public class FileData{
     
+    //instance vars of class FileData
     String File;
     double[][][] Data;
 
     public FileData(String filePath){
 	File = readFile(filePath);
   
-	/* FILE CONTENT IN THE FORM OF:
+	/* HERE IS A SAMPLE OF THE FILE CONTENT IN THE FORM OF:
 	   solid block100
 	   facet normal -1.000000e+000 0.000000e+000 0.000000e+000 //THIS DOES NOT MATTER FOR ANYTHING
 	   outer loop
@@ -32,11 +33,15 @@ public class FileData{
 	   endfacet
 	   endsolid
 	*/
-	//The numbers after the "e" don't matter either
+	//NOTE: Only the numbers with vertex at the front matter, the numbers after the "e" don't matter.
     }
-
-    public String readFile(String filename)
-    {
+    
+    /*==================================================
+      String readFile( String ) -- accesses information in a file
+      pre:
+      post: returns a String with information from files
+      ==================================================*/
+    	public String readFile(String filename) {
 	String content = null;
 	File file = new File(filename); //for ex foo.txt
 	try {
@@ -50,12 +55,15 @@ public class FileData{
 	}
 	return content;
     }
-
-    public double[][][] getFileData(){
-	//if (Data.equals(null)) {
     
-	//turn String File into 3D array that looks like:
-	//[  [  [x y z] [x y z] [x y z] ]   [ [x y z] [x y z] [x y z] ]   [ [x y z] [x y z] [x y z] ] ... ]
+   /*==================================================
+     double[][][] getFileData() -- removes unnecessary information in String file and turns the String file into a 3D array
+     that looks like: [  [  [x y z] [x y z] [x y z] ]   [ [x y z] [x y z] [x y z] ]   [ [x y z] [x y z] [x y z] ] ... ]
+     pre:
+     post: returns a 3D array with coordinates for all vertexes of the object
+     ==================================================*/
+    public double[][][] getFileData() {
+	
 	//STEP1    
 	String[] a = File.split("outer loop");
 	String [] b = new String[a.length -1];
@@ -73,21 +81,22 @@ public class FileData{
 	*/
 	//b.length = 12 
 	
-	//STEP 2
+	
+	//STEP 2 -- removing witespace from b and storing each string as an element of double[][] c
 	String[][] c = new String[b.length][12];
 	for (int i = 0; i < b.length; i ++){
 	    c[i] = b[i].split("\\s+");//Splits on any witespace
 	    //System.out.println(c[i][i]);
 	}
-	/*
+	/* 
 	for (int i = 0; i < 13; i++){
 	    System.out.println(i + " : " + c[1][i]);	
 	}
 	//c looks correct
 	*/
 
-	//STEP 3
 
+	//STEP 3 -- removing "vertex" element in c so we only have the numbers
 	for (int i = 0; i < c.length; i ++){
 	    //c[i][1], c[i][5], c[i][9] contains vertex
 	    String[] newElementOfC = new String[9];
@@ -121,8 +130,8 @@ public class FileData{
 	}
 	*/
 	
-	//STEP 4
-	    
+	
+	//STEP 4 -- removes all characters after the "e" in each element
 	for (int i = 0; i < c.length; i ++){
 	    for (int j = 0; j < c[i].length; j++){
 		c[i][j] = c[i][j].split("e")[0];
@@ -138,7 +147,8 @@ public class FileData{
 	}
 	*/
 
-	//STEP 5
+
+	//STEP 5 - separate the elements into double[][][] Data
 	Data = new double[c.length][3][3];
 	for (int i = 0; i < c.length; i++){
 	    for (int j = 0; j < 3; j++){
@@ -161,7 +171,6 @@ public class FileData{
 	}
 	*/
 	return Data;
+    } // end getFileData method
 
-    }
-
-}
+}// end FileData class
