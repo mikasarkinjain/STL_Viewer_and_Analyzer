@@ -192,10 +192,5 @@ class GUI extends JFrame{
     public void refresh() {
         this.paint(this.getGraphics());
     }
-
-    public static void main(String []args){
-        GUI gui = new GUI();
-        gui.setVisible(true);
-    }
 }
 
