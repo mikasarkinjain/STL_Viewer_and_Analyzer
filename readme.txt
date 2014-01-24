@@ -1,4 +1,4 @@
-STL_Viewer_and_Analyzer
+STL Viewer & Analyzer
 =======================
 
 About:
