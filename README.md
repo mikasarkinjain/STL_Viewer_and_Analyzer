@@ -6,10 +6,10 @@ This small program provides a simple way to view an imported stl file, a standar
 
 Instructions:
 Simply download, unpackage, and enter the following into your terminal:
-
+...
 $ cd path/to/unpackaged/folder
 $ javac *.java ; java GUI
-
+...
 Make sure you have Java installed.
 (Sample STL files are included in the package.) 
 
