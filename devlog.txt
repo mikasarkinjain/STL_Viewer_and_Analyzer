@@ -67,11 +67,11 @@ Unresolved Issues & Additional features
   Panning ability
   
 Cool Stuff Learned (conceptual and/or practical)
-  Better understanding distinct uses for ArrayLists and arrays
-  Introduced to new methods in the String class
   How to make a GUI (and refresh it)
   How to read files
   Reinforced understanding of 3D projections onto the plane
+  Better understanding of distinct uses for ArrayLists and arrays
+  Introduced to new methods in the String class
   
 Mid-development Design Changes (and why)
   No mouse interaction with projection besides with buttons - could not refresh fast enough (math takes too long to complete)
@@ -85,4 +85,4 @@ Lessons Learned (to apply to future projects, CS or otherwise)
   How to effectively use GitHub on projects/ collaborated assignments
   Make something interesting 
   Do something enjoyable 
-  Teamwork
+  Go teamwork
