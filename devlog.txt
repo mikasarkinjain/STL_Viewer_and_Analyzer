@@ -1,7 +1,6 @@
 Mika Sarkin Jain & Ida Huang (Team Double A)
 *For a more precise development history go to https://github.com/mikasarkinjain/STL_Viewer_and_Analyzer/graphs.
 
-IDA: MAKE SURE THE THINGS I WROTE I DID ARE CORRECT: I WROTE THEM DOWN FROM MEMORY.
 --Jan 12 2014--
 Mika: Outlined entire project in detail, made a UML-esque diagram created Coordinate, Triangle, and 3DObject classes.
 Ida: Worked on Coordinate, Triangle, and 3DObject class, made the constructor, toString, and getProjected methods.
@@ -50,3 +49,31 @@ Ida: Revised log and commented code.
 Mika: Revised log and commented code, improved website, improved readme.md.
 Ida: Revised log and commented code.
 
+
+Obstacles Overcome (and how)
+  GUI refreshing obstacle overcome by figuring out how to acess the graphics object of JFrame
+  File reading ability was researched
+  Projection math derived from scratch
+  File parsing solved with trial and error
+  Rendering of lines solved with research
+
+Unresolved Issues (Additional features)
+  Face rendering
+  Shading
+  Panning ability
+  
+Cool Stuff Learned (conceptual and/or practical)
+  How to make a GUI (and refresh it)
+  How to read files
+  Reinforced understanding of 3D projections onto the plane
+  
+Mid-development Design Changes (and why)
+  No mouse interaction of projection besides with buttons - could not refresh fast enough (math takes too long to complete).
+  No shading - could not fully derive math.
+  No face rendering - could not fully derive math. 
+  
+Lessons Learned (to apply to future projects, CS or otherwise)
+  Diagram everything in detail before time
+  Budget time effectively, leave contingency time 
+  Do something that interests you
+  
