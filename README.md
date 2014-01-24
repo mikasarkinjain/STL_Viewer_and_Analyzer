@@ -8,7 +8,7 @@ Instructions:
 Simply download, unpackage, and enter the following into your terminal:
 '''
 $ cd path/to/unpackaged/folder
-$ javac *.java ; java GUI
+$ javac *.java ; java run
 '''
 Make sure you have Java installed.
 (Sample STL files are included in the package.) 
