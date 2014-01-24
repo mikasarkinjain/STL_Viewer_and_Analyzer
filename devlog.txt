@@ -1,3 +1,6 @@
+STL Viewer & Analyzer DevLog
+======================
+
 Mika Sarkin Jain & Ida Huang (Team Double A)
 *For a more precise development history go to https://github.com/mikasarkinjain/STL_Viewer_and_Analyzer/graphs.
 
@@ -49,6 +52,7 @@ Ida: Revised log and commented code.
 Mika: Revised log and commented code, improved website, improved readme.md.
 Ida: Revised log and commented code.
 
+--Reflection--
 
 Obstacles Overcome (and how)
   GUI refreshing obstacle overcome by figuring out how to acess the graphics object of JFrame
@@ -57,7 +61,7 @@ Obstacles Overcome (and how)
   File parsing solved with trial and error
   Rendering of lines solved with research
 
-Unresolved Issues (Additional features)
+Unresolved Issues & Additional features
   Face rendering
   Shading
   Panning ability
@@ -68,12 +72,13 @@ Cool Stuff Learned (conceptual and/or practical)
   Reinforced understanding of 3D projections onto the plane
   
 Mid-development Design Changes (and why)
-  No mouse interaction of projection besides with buttons - could not refresh fast enough (math takes too long to complete).
+  No mouse interaction with projection besides with buttons - could not refresh fast enough (math takes too long to complete)
   No shading - could not fully derive math.
   No face rendering - could not fully derive math. 
   
 Lessons Learned (to apply to future projects, CS or otherwise)
-  Diagram everything in detail before time
-  Budget time effectively, leave contingency time 
-  Do something that interests you
+  Diagram and plan everything in detail beforehand
+  Budget time effectively and leave contingency time 
+  Make something interesting 
+  Do something enjoyable 
   
