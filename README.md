@@ -13,6 +13,7 @@ $ javac *.java ; java run
 ```
 
 Make sure you have Java installed.
+
 (Sample STL files are included in the package.) 
 
 ###Authors and Contributors
