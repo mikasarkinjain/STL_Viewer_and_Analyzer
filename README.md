@@ -21,4 +21,4 @@ Mika Sarkin Jain, Ida Huang
 Stuyvesant High School, New York City
 
 ###Support or Contact
-mikasarkinjain@gmail.com, ihuangda@gmail.com
+mikasarkinjain@gmail.com
